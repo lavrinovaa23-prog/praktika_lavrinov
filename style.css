@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2a2a2a;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+.cont {
+    display: flex; 
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.item1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    min-width: 280px;
+}
+
+.item2 {
+    flex-grow: 4;
+}
+
+div {
+    margin: 10px;
+    padding: 20px;
+    background: #3a3a3a;
+    border-radius: 8px;
+    border: 1px solid #5d5d5d;
+}
+
+h1 {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    color: #d4af37;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #d4af37;
+    margin: 1.5rem 0 1rem 0;
+    border-bottom: 2px solid #b8860b;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #b8860b;
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+header {
+    background: linear-gradient(135deg, #b8860b, #8b6914);
+    color: #2a2a2a;
+    padding: 25px 10px;
+    border-radius: 10px;
+    margin: 20px auto 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 1400px;
+    border: 2px solid #d4af37;
+}
+
+/* Ссылки */
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+/* Списки */
+ol, ul {
+    background: #4a4a4a;
+    padding: 20px 20px 20px 40px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #5d5d5d;
+}
+
+li {
+    margin: 12px 0;
+    line-height: 1.7;
+}
+
+/* Параграфы */
+p {
+    margin: 15px 0;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Усиливаем жирность */
+strong {
+    font-weight: 700;
+    color: #d4af37;
+}
+
+/* Кнопка Назад */
+.back-btn {
+    display: inline-block;
+    background: #b8860b;
+    color: #2a2a2a;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border: 1px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #d4af37;
+    color: #2a2a2a;
+    text-decoration: none;
+    transform: translateX(-5px);
+}
+
+/* Вложенные списки */
+ul ul, ol ol {
+    background: #555555;
+    margin: 10px 0;
+    border: 1px solid #666;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .item1, .item2 {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    div {
+        margin: 5px;
+        padding: 15px;
+    }
+}
